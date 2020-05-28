@@ -3,4 +3,4 @@ deploy:
   environment: production
   # only on master
   script: |
-    lftp -c "$CONNECTION_MAGIC; mirror -R httpdocs $PWD/public;quit"
+    lftp -c "$CONNECTION_MAGIC; mirror -R $PWD/public httpdocs;quit"
