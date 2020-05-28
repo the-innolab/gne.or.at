@@ -1,0 +1,141 @@
+﻿@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+html {
+	background: url(img/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body {
+	font-family: 'Lato', sans-serif;
+}
+a {
+	color: black;
+}
+ul {
+	list-style-type: none;
+	list-style-position: inside;
+}
+.title {
+	font-size: 20px;
+}
+.mtitle {
+	font-size: 18px;
+}
+.line2-color {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.line3-color {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.box {
+	width: 200px;
+	height: 200px;
+	margin: 0px 0px 15px 15px;
+	display: inline-block;
+	float: left;
+	font-size: 14px;
+}
+.content-margin {
+	margin: 5px 10px;
+}
+.line-block {
+
+}
+#box-section {
+	position: fixed;
+	left: 35px;
+	bottom: 35px;
+}
+/* - - - -- - --  line 2 of the box section*/
+#line2 {
+	margin-left: 215px;
+	clear: both;
+}
+/* - - - -- - --  line 3 of the box section*/
+
+#line3 {
+	margin-left: 430px;
+	clear: both;
+} 
+@media only screen and (max-width: 1160px) {
+	/*mode: box-section folded squared centered*/
+	#line2,
+	#line3 {
+		margin-left: 0px;
+	}
+	#box-section {
+		width: 660px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 670px) {
+	#box-section {
+		width: 550px;
+	}
+	.box {
+		width: 170px;
+		height: 170px;
+		margin: 0px 0px 10px 10px;
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 574px) {
+	#box-section {
+		width: 430px;
+	}
+	.box {
+		width: 130px;
+		height: 130px;
+		margin: 0px 0px 10px 10px;
+		font-size: 11px;
+	}
+	.title {
+		font-size: 16px;
+	}
+	.mtitle {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 440px) {
+	#box-section {
+		width: 370px;
+	}
+	.box {
+		width: 110px;
+		height: 110px;
+		margin: 0px 0px 10px 10px;
+		font-size: 9px;
+	}
+	.title {
+		font-size: 14px;
+	}
+	.mtitle {
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 380px) {
+	#box-section {
+		width: 310px;
+	}
+	.box {
+		width: 90px;
+		height: 90px;
+		margin: 0px 0px 10px 10px;
+		font-size: 7px;
+	}
+	.title {
+		font-size: 13px;
+	}
+	.mtitle {
+		font-size: 10px;
+	}
+}
