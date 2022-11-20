@@ -48,6 +48,33 @@ ul {
 .line-block {
 
 }
+
+.climate {	
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.language {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.link-box, .climate {
+	color: white;
+	padding: .5em 1em;
+	background: #afafaf60;
+}
+.link-box a:hover:not(.active), .climate:hover {
+	color: #afafaf;
+}
+.link-box a {
+	color: white;
+}
+.link-box .active {
+	color: #efefef;
+}
+
 #box-section {
 	position: fixed;
 	left: 35px;
