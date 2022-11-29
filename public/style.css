@@ -24,9 +24,11 @@ ul {
 }
 .title {
 	font-size: 20px;
+    font-weight: normal;
 }
 .mtitle {
 	font-size: 18px;
+    font-weight: normal;
 }
 .line2-color {
 	background-color: rgba(255, 255, 255, 0.7);
