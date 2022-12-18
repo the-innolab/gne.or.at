@@ -1,6 +1,7 @@
 deploy:
   stage: deploy
   environment: production
-  # only on master
+  only:
+    - master
   script: |
     lftp -c "set sftp:auto-confirm yes && $CONNECTION_MAGIC && mirror --reverse --delete --verbose $PWD/public httpdocs && quit"
